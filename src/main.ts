@@ -4,5 +4,6 @@ import store from './store'
 
 console.log(import.meta.env)
 
-createApp(App).mount('#app')
+const app = createApp(App)
 app.use(store)
+app.mount('#app')
